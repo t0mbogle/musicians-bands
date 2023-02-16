@@ -13,6 +13,7 @@ describe('Band and Musician Models', () => {
     })
 
     test('can create a Band', async () => {
+        // let newBand = await Band.create({  })
         // TODO - test creating a band
         expect('NO TEST').toBe('EXPECTED VALUE HERE');
     })
