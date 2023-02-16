@@ -13,13 +13,18 @@ describe('Band and Musician Models', () => {
     })
 
     test('can create a Band', async () => {
-        // let newBand = await Band.create({  })
-        // TODO - test creating a band
-        expect('NO TEST').toBe('EXPECTED VALUE HERE');
+        let newBand = await Band.create({ name: "D12", genre: "rap" })
+
+        expect(newBand).toBeInstanceOf(Object);
+        expect(newBand.name).toBe("D12");
+        expect(newBand.genre).toBe("rap");
     })
 
     test('can create a Musician', async () => {
-        // TODO - test creating a musician
-        expect('NO TEST').toBe('EXPECTED VALUE HERE');
+        let newMusician = await Musician.create({ name: "Tom Misch", instrument: "Guitar" })
+
+        expect(newMusician).toBeInstanceOf(Object);
+        expect(newMusician.name).toBe("Tom Misch");
+        expect(newMusician.instrument).toBe("Guitar");
     })
 })
